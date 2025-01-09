@@ -5,7 +5,10 @@
 	<groupId>hybridFramework</groupId>
 	<artifactId>hybridFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -51,7 +54,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles/${xmlFileName}</suiteXmlFile>
 					</suiteXmlFiles>
-					
+
 					<systemPropertyVariables>
 						<executionBrowser>${browser}</executionBrowser>
 						<executionURL>${URL}</executionURL>

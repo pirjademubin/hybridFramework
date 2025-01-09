@@ -1,0 +1,11 @@
+1) Download Apache Maven latest version
+2) Add MAVEN_HOME as variable in user variable and give full path inside extracted maven folder
+3) Edit Path variables in system variables and provide path till bin for same
+4) check the maven version with mvn -version
+5) mvn clean
+6) mvn install
+if project has build parameters in pom.xml then followuing command
+mvn install -Dbrowser=Chrome -DURL=https://ui.cogmento.com/?lang=en -DxmlFileName=testng.xml
+
+if getting compilation error, refer to following video:
+https://www.youtube.com/watch?v=iBG3yyJWEBY
