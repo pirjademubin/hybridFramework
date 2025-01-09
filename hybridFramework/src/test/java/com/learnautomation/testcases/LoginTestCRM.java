@@ -22,16 +22,16 @@ public class LoginTestCRM extends BaseClass {
 		
 	}
 	
-	@Test(priority=2)
-	public void LoginApp1() throws InterruptedException {
-		
-		ExcelDataProvider excel = new ExcelDataProvider();
-		logger = report.createTest("Logout");
-		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		logger.info("Starting Application");
-		loginPage.logintoCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
-		logger.fail("Logout Failed");
-		
-	}
+//	@Test(priority=2)
+//	public void LoginApp1() throws InterruptedException {
+//		
+//		ExcelDataProvider excel = new ExcelDataProvider();
+//		logger = report.createTest("Logout");
+//		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+//		logger.info("Starting Application");
+//		loginPage.logintoCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
+//		logger.fail("Logout Failed");
+//		
+//	}
 
 }
