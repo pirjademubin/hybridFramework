@@ -9,3 +9,8 @@ java -jar jenkins.war --httpPort=8084 --enable-future-java
 4) As soon as we run war file, a folder will be created in users folder with name .jenkins
 all the setting, tasks, jobs, plugins, configs will be stored here
 
+For emails,
+when 2 step verification is on, create app passwords
+and put this credentials in jenkins username password
+
+https://support.google.com/mail/thread/185316448/javax-mail-authenticationfailedexception-535-5-7-8-username-and-password-not-accepted?hl=en
