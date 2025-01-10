@@ -1,0 +1,11 @@
+1) Download Jenkins war file
+2) Extract in folder
+3) java -jar war_file_path 
+OR
+java -jar jenkins.war --enable-future-java
+by default it starts at port 8080, if its busy port, we can set the same in above command as follows
+java -jar war_file_path --httpPort=8084
+java -jar jenkins.war --httpPort=8084 --enable-future-java
+4) As soon as we run war file, a folder will be created in users folder with name .jenkins
+all the setting, tasks, jobs, plugins, configs will be stored here
+
