@@ -14,3 +14,10 @@ when 2 step verification is on, create app passwords
 and put this credentials in jenkins username password
 
 https://support.google.com/mail/thread/185316448/javax-mail-authenticationfailedexception-535-5-7-8-username-and-password-not-accepted?hl=en
+
+
+To view the reports properly in Jenkins
+Go to script executor in Jenkins and type below command
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';")
+
+it will show reports properly
